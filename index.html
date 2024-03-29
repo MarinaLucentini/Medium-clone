@@ -11,7 +11,7 @@
   </head>
 
   <body>
-    <header>
+    <header id="navBar">
       <nav>
         <div class="logo">
           <img src="assets/imgs/svg/logo.svg" alt="logo" />
@@ -23,7 +23,7 @@
             <li>Write</li>
             <li>Sign in</li>
           </ul>
-          <button>Get started</button>
+          <button id="btnNavBar">Get started</button>
         </div>
       </nav>
     </header>
@@ -9329,32 +9329,496 @@
           </div>
         </div>
       </section>
+      <hr />
       <section class="news">
-        <article class="newspaper">
-          <div class="paragrafo">
-            <div class="autore">
-              <img src="assets/imgs/image07.jpeg" alt="img1" />
-              <h4>Robert Roy Britt</h4>
+        <div class="sezioni-testo">
+          <article class="newspaper">
+            <div class="paragrafo-container">
+              <div class="paragrafo">
+                <div class="autore">
+                  <img src="assets/imgs/image07.jpeg" alt="img1" />
+                  <h4>Robert Roy Britt</h4>
+                </div>
+                <div class="title-newspaper">
+                  <h3>How Old is Old?</h3>
+                </div>
+                <p>
+                  What we consider “old” changes dramatically with age, and our
+                  perspectives can be predictive of how well we age
+                </p>
+                <div class="svgs">
+                  <div class="date-container">
+                    <p class="date">Oct 27 · 5 min read · <span>Aging</span></p>
+                    <img src="assets/imgs/svg/star.svg" alt="star" />
+                  </div>
+                  <div class="bookmark">
+                    <img src="assets/imgs/svg/bookmark.svg" alt="bookmark" />
+                  </div>
+                </div>
+              </div>
             </div>
-            <div class="title-newspaper">
-              <h3>How Old is Old?</h3>
+            <div class="immagini">
+              <img src="assets/imgs/image08.jpeg" alt="ragazza" />
             </div>
-            <p>
-              What we consider “old” changes dramatically with age, and our
-              perspectives can be predictive of how well we age
-            </p>
-            <p class="date">Oct 27 · 5 min read · <span>Aging</span></p>
+          </article>
+          <article class="newspaper">
+            <div class="paragrafo-container">
+              <div class="paragrafo">
+                <div class="autore">
+                  <img src="assets/imgs/image09.jpeg" alt="img2" />
+                  <h4>Taru Anniina Liikanen</h4>
+                </div>
+                <div class="title-newspaper">
+                  <h3>Is Taylor Swift Allowed to Speak About Fat?</h3>
+                </div>
+                <p>Is Taylor Swift Allowed to Speak About Fat?</p>
+                <div class="svgs">
+                  <div class="date-container">
+                    <p class="date">
+                      Oct 24 · 6 min read · <span>Health</span>
+                    </p>
+                    <img src="assets/imgs/svg/star.svg" alt="star" />
+                  </div>
+                  <div class="bookmark">
+                    <img src="assets/imgs/svg/bookmark.svg" alt="bookmark" />
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="immagini">
+              <img src="assets/imgs/image10.jpeg" alt="Taylor Swift" />
+            </div>
+          </article>
+          <article class="newspaper">
+            <div class="paragrafo-container">
+              <div class="paragrafo">
+                <div class="autore">
+                  <img src="assets/imgs/image11.jpeg" alt="img3" />
+                  <h4>David Rodenas, Ph. D.</h4>
+                </div>
+                <div class="title-newspaper">
+                  <h3>Don’t Screw Up, You Will Be Found Guilty</h3>
+                </div>
+                <p>
+                  Software Engineer, yours is the right to produce high-quality
+                  work at all times, also the liability.
+                </p>
+                <div class="svgs">
+                  <div class="date-container">
+                    <p class="date">
+                      Oct 15 · 5 min read · <span>Software Engineering</span>
+                    </p>
+                    <img src="assets/imgs/svg/star.svg" alt="star" />
+                  </div>
+                  <div class="bookmark">
+                    <img src="assets/imgs/svg/bookmark.svg" alt="bookmark" />
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="immagini">
+              <img src="assets/imgs/image12.png" alt="Guilty" />
+            </div>
+          </article>
+          <article class="newspaper">
+            <div class="paragrafo-container">
+              <div class="paragrafo">
+                <div class="autore">
+                  <img src="assets/imgs/image13.png" alt="img4" />
+                  <h4>Microsoft Design</h4>
+                </div>
+                <div class="title-newspaper">
+                  <h3>Leave No Trace</h3>
+                </div>
+                <p>
+                  How product designers can break from the status quo and help
+                  our planet
+                </p>
+                <div class="svgs">
+                  <div class="date-container">
+                    <p class="date">
+                      Oct 25 · 11 min read · <span>Sustainability </span>
+                    </p>
+                    <img src="assets/imgs/svg/star.svg" alt="star" />
+                  </div>
+                  <div class="bookmark">
+                    <img src="assets/imgs/svg/bookmark.svg" alt="bookmark" />
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="immagini">
+              <img src="assets/imgs/image14.png" alt="Guilty" />
+            </div>
+          </article>
+          <article class="newspaper">
+            <div class="paragrafo-container">
+              <div class="paragrafo">
+                <div class="autore">
+                  <img src="assets/imgs/image15.jpeg" alt="img5" />
+                  <h4>Scott H. Young</h4>
+                </div>
+                <div class="title-newspaper">
+                  <h3>Variability, Not Repetition, is the Key to Mastery</h3>
+                </div>
+                <p>
+                  Bruce Lee is reported to have said, “I fear not the man who
+                  has practiced 10,000 kicks once, but the man who has practiced
+                  one kick 10,000...
+                </p>
+                <div class="svgs">
+                  <div class="date-container">
+                    <p class="date">
+                      Oct 26 · 7 min read · <span>Health </span>
+                    </p>
+                    <img src="assets/imgs/svg/star.svg" alt="star" />
+                  </div>
+                  <div class="bookmark">
+                    <img src="assets/imgs/svg/bookmark.svg" alt="bookmark" />
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="immagini">
+              <img src="assets/imgs/image16.jpg" alt="Bruce Lee" />
+            </div>
+          </article>
+          <article class="newspaper">
+            <div class="paragrafo-container">
+              <div class="paragrafo">
+                <div class="autore">
+                  <img src="assets/imgs/image17.png" alt="img6" />
+                  <h4>Paul A. DeStefanoin Human Parts</h4>
+                </div>
+                <div class="title-newspaper">
+                  <h3>What I Overheard as an Escape Room Actor</h3>
+                </div>
+                <p>
+                  Lock a group of people in a room and you’ll witness some
+                  surprising confessions
+                </p>
+                <div class="svgs">
+                  <div class="date-container">
+                    <p class="date">
+                      Jan 18, 2020 · 6 min read · <span> Experiences </span>
+                    </p>
+                    <img src="assets/imgs/svg/star.svg" alt="star" />
+                  </div>
+                  <div class="bookmark">
+                    <img src="assets/imgs/svg/bookmark.svg" alt="bookmark" />
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="immagini">
+              <img src="assets/imgs/image18.jpeg" alt="sedia" />
+            </div>
+          </article>
+          <article class="newspaper">
+            <div class="paragrafo-container">
+              <div class="paragrafo">
+                <div class="autore">
+                  <img src="assets/imgs/image19.jpeg" alt="img6" />
+                  <h4>Kim Scott</h4>
+                </div>
+                <div class="title-newspaper">
+                  <h3>
+                    6 Steps for Setting Measurable Goals to Avoid “Productivity
+                    Paranoia”
+                  </h3>
+                </div>
+                <p>
+                  With more people working in remote and hybrid environments
+                  than ever before, company, team and individual goals must be
+                  explicit and…
+                </p>
+                <div class="svgs">
+                  <div class="date-container">
+                    <p class="date">
+                      Oct 24 · 6 min read · <span> Health </span>
+                    </p>
+                    <img src="assets/imgs/svg/star.svg" alt="star" />
+                  </div>
+                  <div class="bookmark">
+                    <img src="assets/imgs/svg/bookmark.svg" alt="bookmark" />
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="immagini">
+              <img src="assets/imgs/image20.jpg" alt="Productivity" />
+            </div>
+          </article>
+          <article class="newspaper">
+            <div class="paragrafo-container">
+              <div class="paragrafo">
+                <div class="autore">
+                  <img src="assets/imgs/image07.jpeg" alt="img1" />
+                  <h4>Robert Roy Britt</h4>
+                </div>
+                <div class="title-newspaper">
+                  <h3>How Old is Old?</h3>
+                </div>
+                <p>
+                  What we consider “old” changes dramatically with age, and our
+                  perspectives can be predictive of how well we age
+                </p>
+                <div class="svgs">
+                  <div class="date-container">
+                    <p class="date">Oct 27 · 5 min read · <span>Aging</span></p>
+                    <img src="assets/imgs/svg/star.svg" alt="star" />
+                  </div>
+                  <div class="bookmark">
+                    <img src="assets/imgs/svg/bookmark.svg" alt="bookmark" />
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="immagini">
+              <img src="assets/imgs/image08.jpeg" alt="ragazza" />
+            </div>
+          </article>
+          <article class="newspaper">
+            <div class="paragrafo-container">
+              <div class="paragrafo">
+                <div class="autore">
+                  <img src="assets/imgs/image09.jpeg" alt="img2" />
+                  <h4>Taru Anniina Liikanen</h4>
+                </div>
+                <div class="title-newspaper">
+                  <h3>Is Taylor Swift Allowed to Speak About Fat?</h3>
+                </div>
+                <p>Is Taylor Swift Allowed to Speak About Fat?</p>
+                <div class="svgs">
+                  <div class="date-container">
+                    <p class="date">
+                      Oct 24 · 6 min read · <span>Health</span>
+                    </p>
+                    <img src="assets/imgs/svg/star.svg" alt="star" />
+                  </div>
+                  <div class="bookmark">
+                    <img src="assets/imgs/svg/bookmark.svg" alt="bookmark" />
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="immagini">
+              <img src="assets/imgs/image10.jpeg" alt="Taylor Swift" />
+            </div>
+          </article>
+          <article class="newspaper">
+            <div class="paragrafo-container">
+              <div class="paragrafo">
+                <div class="autore">
+                  <img src="assets/imgs/image11.jpeg" alt="img3" />
+                  <h4>David Rodenas, Ph. D.</h4>
+                </div>
+                <div class="title-newspaper">
+                  <h3>Don’t Screw Up, You Will Be Found Guilty</h3>
+                </div>
+                <p>
+                  Software Engineer, yours is the right to produce high-quality
+                  work at all times, also the liability.
+                </p>
+                <div class="svgs">
+                  <div class="date-container">
+                    <p class="date">
+                      Oct 15 · 5 min read · <span>Software Engineering</span>
+                    </p>
+                    <img src="assets/imgs/svg/star.svg" alt="star" />
+                  </div>
+                  <div class="bookmark">
+                    <img src="assets/imgs/svg/bookmark.svg" alt="bookmark" />
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="immagini">
+              <img src="assets/imgs/image12.png" alt="Guilty" />
+            </div>
+          </article>
+          <article class="newspaper">
+            <div class="paragrafo-container">
+              <div class="paragrafo">
+                <div class="autore">
+                  <img src="assets/imgs/image13.png" alt="img4" />
+                  <h4>Microsoft Design</h4>
+                </div>
+                <div class="title-newspaper">
+                  <h3>Leave No Trace</h3>
+                </div>
+                <p>
+                  How product designers can break from the status quo and help
+                  our planet
+                </p>
+                <div class="svgs">
+                  <div class="date-container">
+                    <p class="date">
+                      Oct 25 · 11 min read · <span>Sustainability </span>
+                    </p>
+                    <img src="assets/imgs/svg/star.svg" alt="star" />
+                  </div>
+                  <div class="bookmark">
+                    <img src="assets/imgs/svg/bookmark.svg" alt="bookmark" />
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="immagini">
+              <img src="assets/imgs/image14.png" alt="Guilty" />
+            </div>
+          </article>
+          <article class="newspaper">
+            <div class="paragrafo-container">
+              <div class="paragrafo">
+                <div class="autore">
+                  <img src="assets/imgs/image15.jpeg" alt="img5" />
+                  <h4>Scott H. Young</h4>
+                </div>
+                <div class="title-newspaper">
+                  <h3>Variability, Not Repetition, is the Key to Mastery</h3>
+                </div>
+                <p>
+                  Bruce Lee is reported to have said, “I fear not the man who
+                  has practiced 10,000 kicks once, but the man who has practiced
+                  one kick 10,000...
+                </p>
+                <div class="svgs">
+                  <div class="date-container">
+                    <p class="date">
+                      Oct 26 · 7 min read · <span>Health </span>
+                    </p>
+                    <img src="assets/imgs/svg/star.svg" alt="star" />
+                  </div>
+                  <div class="bookmark">
+                    <img src="assets/imgs/svg/bookmark.svg" alt="bookmark" />
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="immagini">
+              <img src="assets/imgs/image16.jpg" alt="Bruce Lee" />
+            </div>
+          </article>
+          <article class="newspaper">
+            <div class="paragrafo-container">
+              <div class="paragrafo">
+                <div class="autore">
+                  <img src="assets/imgs/image17.png" alt="img6" />
+                  <h4>Paul A. DeStefanoin Human Parts</h4>
+                </div>
+                <div class="title-newspaper">
+                  <h3>What I Overheard as an Escape Room Actor</h3>
+                </div>
+                <p>
+                  Lock a group of people in a room and you’ll witness some
+                  surprising confessions
+                </p>
+                <div class="svgs">
+                  <div class="date-container">
+                    <p class="date">
+                      Jan 18, 2020 · 6 min read · <span> Experiences </span>
+                    </p>
+                    <img src="assets/imgs/svg/star.svg" alt="star" />
+                  </div>
+                  <div class="bookmark">
+                    <img src="assets/imgs/svg/bookmark.svg" alt="bookmark" />
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="immagini">
+              <img src="assets/imgs/image18.jpeg" alt="sedia" />
+            </div>
+          </article>
+          <article class="newspaper">
+            <div class="paragrafo-container">
+              <div class="paragrafo">
+                <div class="autore">
+                  <img src="assets/imgs/image19.jpeg" alt="img6" />
+                  <h4>Kim Scott</h4>
+                </div>
+                <div class="title-newspaper">
+                  <h3>
+                    6 Steps for Setting Measurable Goals to Avoid “Productivity
+                    Paranoia”
+                  </h3>
+                </div>
+                <p>
+                  With more people working in remote and hybrid environments
+                  than ever before, company, team and individual goals must be
+                  explicit and…
+                </p>
+                <div class="svgs">
+                  <div class="date-container">
+                    <p class="date">
+                      Oct 24 · 6 min read · <span> Health </span>
+                    </p>
+                    <img src="assets/imgs/svg/star.svg" alt="star" />
+                  </div>
+                  <div class="bookmark">
+                    <img src="assets/imgs/svg/bookmark.svg" alt="bookmark" />
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="immagini">
+              <img src="assets/imgs/image20.jpg" alt="Productivity" />
+            </div>
+          </article>
+        </div>
+
+        <aside class="discover">
+          <div class="tags-container">
+            <div class="tags-title">
+              <h4>Discover more of what matters to you</h4>
+            </div>
+            <div class="tags">
+              <div class="tags-text">
+                <p>Programming</p>
+              </div>
+              <div class="tags-text">
+                <p>Data Science</p>
+              </div>
+              <div class="tags-text">
+                <p>Technology</p>
+              </div>
+              <div class="tags-text">
+                <p>Self Improvement</p>
+              </div>
+              <div class="tags-text">
+                <p>Writing</p>
+              </div>
+              <div class="tags-text">
+                <p>Relationships</p>
+              </div>
+              <div class="tags-text">
+                <p>Machine Learning</p>
+              </div>
+              <div class="tags-text">
+                <p>Productivity</p>
+              </div>
+              <div class="tags-text">
+                <p>Politics</p>
+              </div>
+            </div>
           </div>
-        </article>
-        <article class="newspaper"></article>
-        <article class="newspaper"></article>
-        <article class="newspaper"></article>
-        <article class="newspaper"></article>
-        <article class="newspaper"></article>
-        <article class="newspaper"></article>
-        <article class="newspaper"></article>
-        <article class="newspaper"></article>
+          <hr />
+
+          <div class="links">
+            <p class="links-text">Help</p>
+            <p class="links-text">Status</p>
+            <p class="links-text">Writers</p>
+            <p class="links-text">Blog</p>
+            <p class="links-text">Careers</p>
+            <p class="links-text">Privacy</p>
+            <p class="links-text">Terms</p>
+            <p class="links-text">About</p>
+            <p class="links-text">Knowable</p>
+          </div>
+        </aside>
       </section>
     </main>
+    <script src="index.js"></script>
   </body>
 </html>
