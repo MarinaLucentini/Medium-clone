@@ -13,7 +13,7 @@ button {
   font-family: inherit;
   color: white;
   background-color: #191919;
-  height: 1.5em;
+  height: 2em;
   border-radius: 25px;
   margin-inline: 3em;
   width: 5em;
@@ -46,6 +46,7 @@ nav {
   align-items: center;
   justify-content: space-between;
   margin-block: 0.5em;
+  width: 100%;
 }
 .logo {
   width: 55%;
@@ -100,7 +101,13 @@ h2 {
 .svg-m {
   display: none;
 }
-@media screen and (min-width: 769px) {
+@media screen and (min-width: 481px) {
+  .logo {
+    width: 45%;
+  }
+  .nav-bar {
+    width: 50%;
+  }
   .svg-m {
     display: block;
   }
@@ -151,7 +158,7 @@ h2 {
   margin-block: 0.3em;
   align-items: center;
 }
-@media screen and (min-width: 769px) {
+@media screen and (min-width: 481px) {
   .trending2 {
     flex-direction: row;
     gap: 0px;
@@ -159,10 +166,15 @@ h2 {
   .card-trending {
     display: flex;
     gap: 10px;
-    width: 33.33%;
+    width: 45%;
     align-items: center;
     height: 200px;
     margin: 0;
+  }
+}
+@media screen and (min-width: 769px) {
+  .card-trending {
+    width: 33.33%;
   }
 }
 
@@ -206,6 +218,7 @@ aside {
   width: 100%;
   order: 2;
 }
+
 @media screen and (min-width: 769px) {
   .news {
     flex-direction: row;
