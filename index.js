@@ -18,13 +18,11 @@ window.onscroll = function () {
 let i = 0;
 
 setInterval(() => {
-  i++;
-  const svgM = document.getElementsByTagName("g")[i];
-  if (svgM.style.opacity === 1) {
-    clearInterval();
+  i = Math.floor(Math.random() * 2000);
+  const svgM = document.getElementsByTagName("g")[i + 2];
+  if (svgM.style.opacity === "1") {
+    svgM.style.opacity = "0";
   } else {
     svgM.style.opacity = "1";
   }
-}, 50);
-// almeno le m appaiono, non sono riuscita a farle ciclare ho provato di tutto
-// lavorerò il fine settimana per il responsive e cercherò di far scomparire e animare meglio queste m
+}, 5);
