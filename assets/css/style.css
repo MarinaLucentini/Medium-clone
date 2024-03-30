@@ -6,34 +6,36 @@ body {
   font-family: "Roboto", sans-serif;
   min-height: 500vh;
   position: relative;
+  font-size: 0.5em;
 }
-ul {
-  list-style: none;
-  display: flex;
-  gap: 15px;
-}
+
 button {
   font-family: inherit;
   color: white;
   background-color: #191919;
-  height: 40px;
+  height: 1.5em;
   border-radius: 25px;
   margin-inline: 3em;
-  width: 100px;
+  width: 5em;
+  font-size: inherit;
 }
-
+ul {
+  display: none;
+}
 header {
   background-color: #ffc017;
   border-bottom: 1px solid #191919;
   position: fixed;
   width: 100%;
-  height: 100px;
+  height: 65px;
   z-index: 999;
+  display: flex;
+  align-items: center;
 }
 main {
   width: 100%;
   position: absolute;
-  top: 100px;
+  top: 65px;
 }
 
 nav {
@@ -45,9 +47,16 @@ nav {
   justify-content: space-between;
   margin-block: 0.5em;
 }
+.logo {
+  width: 55%;
+}
+.logo img {
+  width: inherit;
+}
 .nav-bar {
   display: flex;
   align-items: center;
+  width: 55%;
 }
 
 .changeColorNav {
@@ -66,31 +75,50 @@ section {
 h2,
 h3 {
   font-family: "Spectral", serif;
-  font-size: 24px;
+  font-size: 2em;
   margin-block: 0.5em;
   line-height: 24px;
 }
-.text-h3 {
-  width: 80%;
-}
+
 h2 {
-  font-size: 105px;
+  font-size: 5.5em;
 }
 .hero {
   background-color: #ffc017;
 }
 .title-hero {
-  margin-left: 5em;
+  margin-left: 1em;
 }
 .title-hero button {
   margin: 0;
   margin-block: 0.5em;
-  width: 190px;
-  height: 40px;
+  width: 8em;
+  height: 1em;
   font-size: 1.2em;
   padding: 8px 20px;
 }
-
+.svg-m {
+  display: none;
+}
+@media screen and (min-width: 769px) {
+  .svg-m {
+    display: block;
+  }
+  .sign-in {
+    display: none;
+  }
+  ul {
+    list-style: none;
+    display: flex;
+    gap: 15px;
+  }
+  header {
+    height: 100px;
+  }
+  main {
+    top: 100px;
+  }
+}
 /* fine hero */
 .trending {
   margin-left: 5em;
@@ -115,14 +143,29 @@ h2 {
   display: flex;
   flex-wrap: wrap;
   margin-block: 0.5em;
+  flex-direction: column;
+  gap: 5px;
 }
 .card-trending {
   display: flex;
-  gap: 10px;
-  width: 33.33%;
+  margin-block: 0.3em;
   align-items: center;
-  height: 200px;
 }
+@media screen and (min-width: 769px) {
+  .trending2 {
+    flex-direction: row;
+    gap: 0px;
+  }
+  .card-trending {
+    display: flex;
+    gap: 10px;
+    width: 33.33%;
+    align-items: center;
+    height: 200px;
+    margin: 0;
+  }
+}
+
 .trending-num {
   color: #1919193d;
   font-size: 3.5em;
@@ -153,6 +196,30 @@ h2 {
   margin-block: 4em;
   width: 100%;
   align-items: flex-start;
+  flex-direction: column;
+}
+aside {
+  width: 100%;
+  order: 1;
+}
+.sezioni-testo {
+  width: 100%;
+  order: 2;
+}
+@media screen and (min-width: 769px) {
+  .news {
+    flex-direction: row;
+  }
+  aside {
+    width: 35%;
+    position: sticky;
+    top: 120px;
+    order: 2;
+  }
+  .sezioni-testo {
+    width: 55%;
+    order: 1;
+  }
 }
 .autore {
   display: flex;
@@ -191,9 +258,7 @@ h2 {
   align-items: center;
   margin-block: 2.5em;
 }
-.sezioni-testo {
-  width: 55%;
-}
+
 .svgs {
   display: flex;
 
@@ -225,12 +290,6 @@ h2 {
   max-height: 200px;
 }
 /* fine parte centrale */
-
-aside {
-  width: 35%;
-  position: sticky;
-  top: 120px;
-}
 
 .tags {
   margin-inline: auto;
